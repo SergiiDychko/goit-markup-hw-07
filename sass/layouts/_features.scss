@@ -1,0 +1,30 @@
+.feature-icons {
+  background-color: var(--bg-color-light);
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features-list .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature-items {
+  width: 270px;
+}
+
+.feature-items .title {
+  margin-bottom: 10px;
+}
