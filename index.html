@@ -483,45 +483,44 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-
-        <form name="modal-form" class="modal-form">
-          <label for="user-name" class="label-title"> Ім'я </label>
-          <div class="input-box">
+        <form name="user-meta" class="user-meta">
+          <label for="user-name" class="label"> Ім'я </label>
+          <div class="meta-wrap">
             <input
               type="text"
               id="user-name"
               name="user-name"
-              class="user-name modal-item"
+              class="meta"
               required
             />
-            <svg class="modal-icon" width="18" height="18">
+            <svg class="meta-icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#icon-person"></use>
             </svg>
           </div>
-          <label for="user-tel" class="label-title"> Телефон </label>
-          <div class="input-box">
-            <input type="tel" id="user-tel" name="telephone_number" class="user-tel modal-item" required />
-            <svg class="modal-icon" width="18" height="18">
+          <label for="user-tel" class="label"> Телефон </label>
+          <div class="meta-wrap">
+            <input type="tel" id="user-tel" name="telephone_number" class="meta" required />
+            <svg class="meta-icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg>
           </div>
-          <label for="user-email" class="label-title"> Пошта </label>
-          <div class="input-box">
+          <label for="user-email" class="label"> Пошта </label>
+          <div class="meta-wrap">
             <input
               type="email"
               id="user-email"
               name="e-mail"
-              class="user-email modal-item"
+              class="meta"
               required
             />
-            <svg class="modal-icon" width="18" height="18">
+            <svg class="meta-icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#icon-email"></use>
             </svg>
           </div>
-          <label for="user-comment" class="label-title"> Коментар </label>
+          <label for="user-comment" class="label"> Коментар </label>
           <textarea
             name="user-comment"
-            class="user-comment modal-item"
+            class="meta comment"
             rows="5"
             placeholder="Введіть текст"
           ></textarea>
@@ -531,8 +530,8 @@
               id="user-agreement"
               class="hidden-check visually-hidden"
             />
-            <label for="user-agreement" class="user-agreement">
-              <span class="check-agreement">
+            <label for="user-agreement" class="agreement">
+              <span class="agreement-check">
                 <svg class="check-icon" width="12" height="9">
                   <use href="./images/symbol-defs.svg#icon-check"></use>
                 </svg>
@@ -540,10 +539,10 @@
               Погоджуюся з розсилкою та приймаю 
               <a class="agreement-link" href="#">Умови договору</a>
             </label>
-          <button class="send-button button" type="submit">Відправити</button>
+          <button class="send-button" type="submit">Відправити</button>
         </form>
 
-        <button class="x-box" type="submit" data-modal-close><svg class="x-button">
+        <button class="close-button" type="submit" data-modal-close><svg class="close-icon">
             <use href="./images/symbol-defs.svg#icon-close" width="18" height="18"></use>
           </svg>
         </button>
