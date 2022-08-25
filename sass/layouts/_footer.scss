@@ -4,15 +4,14 @@
 }
 .page-footer .container {
   display: flex;
+  justify-content: space-between;
 }
 .page-footer .logo {
+  display: inline-block;
   margin-bottom: 20px;
 }
 .footer-contacts {
   font-style: normal;
-}
-.footer-contacts .list {
-  width: 207px;
 }
 .footer-contacts .link {
   color: var(--footer-text-color);
@@ -33,7 +32,7 @@
 }
 .footer-social,
 .subscribe {
-  margin: 12px 0 0 94px;
+  margin-top: 12px;
 }
 .footer-social .title,
 .subscribe .title {
