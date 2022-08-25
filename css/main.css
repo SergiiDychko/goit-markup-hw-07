@@ -519,6 +519,10 @@ body {
   font-style: normal;
 }
 
+.footer-contacts .list {
+  width: 207px;
+}
+
 .footer-contacts .link {
   color: var(--footer-text-color);
   transition: color var(--hover-focus-decor-func);
