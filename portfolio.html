@@ -20,185 +20,187 @@
 
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="page-header__container container">
         <nav>
-          <div class="nav-box">
-          <!-- лого в хедері -->
-          <a class="logo link" href="./index.html" lang="en">
-            Web<span class="logo-header">Studio</span>
-          </a>
-          <!-- навігаційне меню -->
-          <ul class="site-nav list">
-            <li class="header-link"><a class="link" href="./index.html">Студія</a></li>
-            <li class="header-link"><a class="link actual" href="./portfolio.html">Портфоліо</a></li>
-            <li class="header-link"><a class="link" href="">Контакти</a></li>
-          </ul>
+          <div class="nav">
+            <!-- лого в хедері -->
+              <a class="logo link" href="./index.html" lang="en">
+                Web<span class="logo--color-black">Studio</span>
+              </a>
+            <!-- навігаційне меню -->
+            <ul class="nav__list list">
+              <li><a class="nav__link link" href="./index.html">Студія</a></li>
+              <li><a class="nav__link link nav__link--actual" href="./portfolio.html">Портфоліо</a></li>
+              <li><a class="nav__link link" href="">Контакти</a></li>
+            </ul>
           </div>
         </nav>
 
         <!-- контакти в шапці -->
         <ul class="header-contacts list">
-          <li class="header-link">
-            <a class="contacts-link link" href="mailto:info@devstudio.com">
-              <svg class="contacts-icon" width="16" height="12">
-              <use href="./images/symbol-defs.svg#icon-mail"></use>
+          <li>
+            <a class="header-contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="header-contacts__icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-mail"></use>
               </svg>
-            info@devstudio.com</a>
+              info@devstudio.com
+            </a>
           </li>
-          <li class="header-link">
-            <a class="contacts-link link" href="tel:+380961111111">
-              <svg class="contacts-icon" width="10" height="16">
-              <use href="./images/symbol-defs.svg#icon-tel"></use>
+          <li>
+            <a class="header-contacts__link link" href="tel:+380961111111">
+              <svg class="header-contacts__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-tel"></use>
               </svg>
-              +38 096 111 11 11</a>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
     </header>
 
     <main>
-      <section class="section">
+      <section class="portfolio section">
         <div class="container">
           <h1 class="section-title visually-hidden">Портфоліо</h1>
           <!-- фільтри -->
           <ul class="filter list">
-            <li class="filter-list-item">
-              <button class="filter-button actual-filter" type="button">Усі</button>
+            <li class="filter__item">
+              <button class="filter__button filter__button--actual" type="button">Усі</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-button" type="button">Веб-сайти</button>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Веб-сайти</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-button" type="button">Додатки</button>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Додатки</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-button" type="button">Дизайн</button>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Дизайн</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-button" type="button">Маркетинг</button>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Маркетинг</button>
             </li>
           </ul>
           
           <!-- приклади робіт -->
-          <ul class="exemple-list list">
-            <li class="exemple">
-              <div class="exemple-box">
-                <img class="exemple-img"
+          <ul class="portfolio__list list">
+            <li class="portfolio__item">
+              <div class="portfolio__wrap">
+                <img class="portfolio__img"
                   src="./images/portfolio/tehnokryak.jpg"
                   alt="екран ноутбуку"
                   width="370"
                   height="294"
                 />
-                <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                <p class="portfolio__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
-              <div class="exemple-data">
-                <h2 class="title">Технокряк</h2>
-                <p class="text">Веб-сайт</p>
+              <div class="portfolio__meta">
+                <h2 class="portfolio__title">Технокряк</h2>
+                <p class="portfolio__text">Веб-сайт</p>
               </div>
             </li>
-            <li class="exemple">
-              <div class="exemple-box">
-              <img class="exemple-img"
+            <li class="portfolio__item">
+              <div class="portfolio__wrap">
+              <img class="portfolio__img"
                 src="./images/portfolio/basketball.jpg"
                 alt="баскетбольний постер>"
                 width="370"
                 height="294"
               />
-              <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
+              <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
               </div>
-              <div class="exemple-data">
-              <h2 class="title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-              <p class="text">Дизайн</p>
+              <div class="portfolio__meta">
+              <h2 class="portfolio__title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+              <p class="portfolio__text">Дизайн</p>
               </div>
             </li>
-            <li class="exemple">
-              <div class="exemple-box">
-              <img class="exemple-img"
+            <li class="portfolio__item">
+              <div class="portfolio__wrap">
+              <img class="portfolio__img"
                 src="./images/portfolio/seafood.jpg"
                 alt="логотип ресторану"
                 width="370"
                 height="294"
               />
-              <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
+              <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
               </div>
-              <div class="exemple-data">
-              <h2 class="title">Ресторан <span lang="en">Seafood</span></h2>
-              <p class="text">Додаток</p>
+              <div class="portfolio__meta">
+              <h2 class="portfolio__title">Ресторан <span lang="en">Seafood</span></h2>
+              <p class="portfolio__text">Додаток</p>
               </div>
             </li>
-            <li class="exemple">
-              <div class="exemple-box">
-              <img class="exemple-img"
+            <li class="portfolio__item">
+              <div class="portfolio__wrap">
+              <img class="portfolio__img"
                 src="./images/portfolio/prime.jpg"
                 alt="великі навушники"
                 width="370"
                 height="294"
               />
-              <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
+              <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
               </div>
-              <div class="exemple-data">
-              <h2 class="title">Проєкт <span lang="en">Prime</span></h2>
-              <p class="text">Маркетинг</p>
-              </div>
-            </li>
-            <li class="exemple">
-              <div class="exemple-box">
-              <img class="exemple-img" src="./images/portfolio/tehnokryak.jpg" alt="коробки" width="370" height="294" />
-              <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
-              </div>
-              <div class="exemple-data">
-              <h2 class="title">Проєкт <span lang="en">Boxes</span></h2>
-              <p class="text">Додаток</p>
+              <div class="portfolio__meta">
+              <h2 class="portfolio__title">Проєкт <span lang="en">Prime</span></h2>
+              <p class="portfolio__text">Маркетинг</p>
               </div>
             </li>
-            <li class="exemple">
-              <div class="exemple-box">
-              <img class="exemple-img"
+            <li class="portfolio__item">
+              <div class="portfolio__wrap">
+              <img class="portfolio__img" src="./images/portfolio/tehnokryak.jpg" alt="коробки" width="370" height="294" />
+              <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
+              </div>
+              <div class="portfolio__meta">
+              <h2 class="portfolio__title">Проєкт <span lang="en">Boxes</span></h2>
+              <p class="portfolio__text">Додаток</p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <div class="portfolio__wrap">
+              <img class="portfolio__img"
                 src="./images/portfolio/inspiration.jpg"
                 alt="монітор"
                 width="370"
                 height="294"
               />
-              <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
+              <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
               </div>
-              <div class="exemple-data">
-              <h2 class="title" lang="en">Inspiration has no Borders</h2>
-              <p class="text">Веб-сайт</p>
+              <div class="portfolio__meta">
+              <h2 class="portfolio__title" lang="en">Inspiration has no Borders</h2>
+              <p class="portfolio__text">Веб-сайт</p>
               </div>
             </li>
-            <li class="exemple">
-              <div class="exemple-box">
-              <img class="exemple-img"
+            <li class="portfolio__item">
+              <div class="portfolio__wrap">
+              <img class="portfolio__img"
                 src="./images/portfolio/limited.jpg"
                 alt="розгорнута книга"
                 width="370"
                 height="294"
               />
-              <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
+              <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
               </div>
-              <div class="exemple-data">
-              <h2 class="title">Видання <span lang="en">Limited Edition</span></h2>
-              <p class="text">Дизайн</p>
-              </div>
-            </li>
-            <li class="exemple">
-              <div class="exemple-box">
-              <img class="exemple-img" src="./images/portfolio/lab.jpg" alt="етикетка" width="370" height="294" />
-              <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
-              </div>
-              <div class="exemple-data">
-              <h2 class="title">Проєкт <span lang="en">LAB</span></h2>
-              <p class="text">Маркетинг</p>
+              <div class="portfolio__meta">
+              <h2 class="portfolio__title">Видання <span lang="en">Limited Edition</span></h2>
+              <p class="portfolio__text">Дизайн</p>
               </div>
             </li>
-            <li class="exemple">
-              <div class="exemple-box">
-              <img class="exemple-img" src="./images/portfolio/growing.jpg" alt="ноутбук" width="370" height="294" />
-              <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
+            <li class="portfolio__item">
+              <div class="portfolio__wrap">
+              <img class="portfolio__img" src="./images/portfolio/lab.jpg" alt="етикетка" width="370" height="294" />
+              <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
               </div>
-              <div class="exemple-data">
-              <h2 class="title" lang="en">Growing Business</h2>
-              <p class="text">Додаток</p>
+              <div class="portfolio__meta">
+              <h2 class="portfolio__title">Проєкт <span lang="en">LAB</span></h2>
+              <p class="portfolio__text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <div class="portfolio__wrap">
+              <img class="portfolio__img" src="./images/portfolio/growing.jpg" alt="ноутбук" width="370" height="294" />
+              <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus sint exercitationem eum, aperiam laboriosam.</p>
+              </div>
+              <div class="portfolio__meta">
+              <h2 class="portfolio__title" lang="en">Growing Business</h2>
+              <p class="portfolio__text">Додаток</p>
               </div>
             </li>
           </ul>
@@ -212,7 +214,7 @@
       <div class="container">
         <div>
           <a class="logo link" href="./index.html" lang="en">
-            Web<span class="logo-footer">Studio</span>
+            Web<span class="logo--color-white">Studio</span>
           </a>
           <!-- контакти в підвалі -->
           <address class="footer-contacts">
@@ -239,44 +241,44 @@
         <!-- соцмережі в підвалі -->
         <div class="footer-social">
           <h3 class="title">приєднуйтесь</h3>
-          <ul class="social-list list">
-            <li class="social-items">
-              <a class="social-link link" href="#">
-                <div class="circle">
-                  <svg class="social-icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </div>
-              </a>
-            </li>
-            <li class="social-items">
-              <a class="social-link link" href="#">
-                <div class="circle">
-                  <svg class="social-icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </div>
-              </a>
-            </li>
-            <li class="social-items">
-              <a class="social-link link" href="#">
-                <div class="circle">
-                  <svg class="social-icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </div>
-              </a>
-            </li>
-            <li class="social-items">
-              <a class="social-link link" href="#">
-                <div class="circle">
-                  <svg class="social-icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
-                </div>
-              </a>
-            </li>
-          </ul>
+              <ul class="social list">
+                <li>
+                  <a class="link" href="#">
+                    <div class="social-wrap">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="link" href="#">
+                    <div class="social-wrap">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="link" href="#">
+                    <div class="social-wrap">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="link" href="#">
+                    <div class="social-wrap">
+                      <svg class="social-icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
         </div>
 
         <!-- форма підписки -->

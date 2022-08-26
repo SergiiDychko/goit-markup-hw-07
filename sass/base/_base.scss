@@ -16,6 +16,9 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
 }
+address {
+  font-style: normal;
+}
 .link {
   text-decoration: none;
 }
@@ -24,11 +27,12 @@ ol {
 }
 img {
   display: block;
+  min-width: 100%;
+  height: auto;
 }
 .section {
   padding: 94px 0;
 }
-
 body {
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;

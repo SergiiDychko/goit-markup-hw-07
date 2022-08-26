@@ -5,10 +5,10 @@
   line-height: 1.19;
   color: var(--primary-accent-color);
 
-  &-header {
+  &--color-black {
     color: #000000;
   }
-  &-footer {
+  &--color-white {
     color: var(--secondary-accent-color);
   }
 }
