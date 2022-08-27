@@ -36,10 +36,10 @@
 
 .nav__link--actual {
   display: inline-block;
-  color: var(--primary-accent-color);
   position: relative;
   padding-right: 5px;
   padding-left: 5px;
+  color: var(--primary-accent-color);
   
   &::after {
     display: inline-block;

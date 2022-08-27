@@ -4,8 +4,8 @@
   justify-content: center;
   
   &__icon {
-    fill: var(--primary-icon-color);
     margin: auto;
+    fill: var(--primary-icon-color);
     transition: fill var(--hover-focus-decor-func);
     .social .link:hover &,
     .social .link:focus & {
