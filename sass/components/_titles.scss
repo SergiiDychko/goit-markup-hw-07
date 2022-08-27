@@ -12,4 +12,10 @@
     font-size: 14px;
     line-height: 1.17;
     text-transform: uppercase;
+  
+    &--footer-social,
+    &--subscribe {
+      color: var(--secondary-accent-color);
+    margin-bottom: 20px;
+  }
 }

@@ -32,53 +32,48 @@
   }
 }
 
-.footer-social,
-.subscribe {
+.footer-social {
   margin-top: 12px;
 }
-.footer-social__title,
-.subscribe__title {
-  color: var(--secondary-accent-color);
-  margin-bottom: 20px;
-}
-.footer-social .social-wrap {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.footer-social .social-icon {
-  fill: var(--secondary-accent-color);
-}
-.subscribe-form {
-  display: flex;
-  align-items: center;
-}
-.subsribe-email {
-  width: 358px;
-  height: 50px;
-  padding: 0 16px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  outline: none;
-  color: var(--footer-text-color);
-  margin-right: 12px;
-  transition: border-color var(--hover-focus-decor-func);
-  transition: background-color var(--hover-focus-decor-func);
-}
-.subsribe-email:hover {
-border-color: rgba(255, 255, 255, 0.5);
-}
-.subsribe-email:focus {
-  border-color: var(--secondary-accent-color);
-  background-color: rgba(255, 255, 255, 0.1)
-}
-.subscribe-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 200px;
-  height: 50px;
-}
-.send-icon {
-  fill: var(--secondary-accent-color);
+
+.subscribe {
+  margin-top: 12px;
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__email {
+    width: 358px;
+    height: 50px;
+    padding: 0 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+    color: var(--footer-text-color);
+    margin-right: 12px;
+    transition: border-color var(--hover-focus-decor-func);
+    transition: background-color var(--hover-focus-decor-func);
+    &:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    }
+    &:focus {
+      border-color: var(--secondary-accent-color);
+      background-color: rgba(255, 255, 255, 0.1)
+    }
+  }
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    }
+
+  &__icon {
+    fill: var(--secondary-accent-color);
+  }
 }

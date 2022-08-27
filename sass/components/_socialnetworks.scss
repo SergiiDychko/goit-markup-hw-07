@@ -3,7 +3,7 @@
   gap: 10px;
   justify-content: center;
   
-  &-icon {
+  &__icon {
     fill: var(--primary-icon-color);
     margin: auto;
     transition: fill var(--hover-focus-decor-func);
@@ -11,9 +11,14 @@
     .social .link:focus & {
       fill: var(--secondary-accent-color);
     }
+
+    &--footer-social {
+      fill: var(--secondary-accent-color);
+    }
+
   }
   
-  &-wrap {
+  &__wrap {
     display: flex;
     width: 44px;
     height: 44px;
@@ -23,5 +28,9 @@
     .social .link:focus & {
       background-color: var(--primary-accent-color);
       }
+  
+    &--footer-social {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
   }
 }
